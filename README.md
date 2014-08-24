@@ -1,17 +1,20 @@
 SimpleTodoList
 ==============
 
-Initial Submission of Simple Todo app for CodePath
+Committed second (extended feature) version of Simple Todo app for CodePath
 
-Features:
-- Add new todo item
-- Delete todo item by long click
-- Navigate to edit screen by click on item
-- Save item text change
+New Features:
 
-Screenshot:
+- Added support for completion due dates and priority for items
+- Changed the item in ListView to display priority and due date and stylized 
+- Added background for the whole app
+- Persisted the todo app in SQLite instead of using a text file
+- Used a DialogFragment instead of new Activity to support editing items
+- Added Add(+) button on Action bar to trigger adding nof new item
+- Used DialogFragment for adding new item
 
-![Alt text](https://github.com/frimfram/SimpleTodoList/blob/master/screen1.png "Todo list and add")
+animated gif:
 
-![Alt text](https://github.com/frimfram/SimpleTodoList/blob/master/screen2.png "Todo item edit")
+![Alt text](https://github.com/frimfram/SimpleTodoList/blob/master/todoextended.gif "Todo app with extended features")
+
 
