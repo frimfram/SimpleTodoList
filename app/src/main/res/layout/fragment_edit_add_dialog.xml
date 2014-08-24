@@ -1,0 +1,73 @@
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/etItemText"
+        android:padding="10dp"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/priority"
+        android:layout_below="@id/etItemText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:ems="10"
+        android:id="@+id/textViewPriority" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerPriority"
+        android:layout_alignTop="@id/textViewPriority"
+        android:layout_toRightOf="@id/textViewPriority"
+        android:text="@string/priority" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/due_date"
+        android:ems="10"
+        android:layout_below="@+id/textViewPriority"
+        android:padding="10dp"
+        android:id="@+id/textViewDue" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/etDueDate"
+        android:layout_alignTop="@+id/textViewDue"
+        android:layout_toRightOf="@+id/textViewDue" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save"
+        android:id="@+id/save_button"
+        android:layout_below="@+id/textViewDue"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentLeft="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/cancel"
+        android:id="@+id/cancel_button"
+        android:layout_toRightOf="@id/save_button"
+        android:layout_alignTop="@id/save_button" />
+
+</RelativeLayout>
